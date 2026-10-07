@@ -1,11 +1,45 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Siena Scalp EEG Database",
+  "description": "Scalp video-EEG recordings from 14 adults with epilepsy, collected at the Unit of Neurology and Neurophysiology of the University of Siena, Italy. The dataset comprises about 128 hours of recording sampled at 512 Hz, with 47 annotated seizures, 10-20 electrode placement and ECG channels. It was collected for patient-specific seizure prediction research and is distributed here as a BIDS curation of the PhysioNet release, with SzCORE seizure-type annotations as derivatives.",
+  "methods_description": "Data were acquired with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes placed on the international 10-20 system, at a 512 Hz sampling rate. Patients stayed in bed, asleep or awake, during video-EEG monitoring. Seizures were classified according to ILAE criteria by an expert clinician. Original EDF files were kept byte-identical, and seizure annotations were converted to BIDS events.",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
   "authors": {
     "Paolo Detti": {
       "orcid": "0000-0001-5717-5272"
     }
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "Seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "seizure prediction"
+    },
+    {
+      "term": "seizure detection"
+    },
+    {
+      "term": "video-EEG monitoring"
+    },
+    {
+      "term": "Electrocardiography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004562"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.13026/5d4a-j060",
@@ -36,6 +70,16 @@
       "identifier": "10.1038/s44360-026-00096-z",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.5281/zenodo.10640762",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1111/epi.18113",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
@@ -48,14 +92,11 @@
       "award_title": "PANACEE (Prevision and analysis of brain activity in transitions: epilepsy and sleep)"
     }
   ],
-  "title": "Siena Scalp EEG Database",
-  "license": "CC-BY-4.0",
-  "dataset_type": "raw",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "22.08 GB (45 files)"
   ],
@@ -69,36 +110,5 @@
     ".txt",
     ".yml"
   ],
-  "description": "A BIDS curation of the Siena Scalp EEG Database, comprising continuous scalp video-EEG recordings from 14 adults with epilepsy, acquired at the University of Siena, Italy. The dataset contains about 128 hours of recording at 512 Hz with 47 annotated seizures, 10-20 electrode placement, and ECG channels in most recordings. It was collected within the PANACEE project to support patient-specific seizure prediction and detection research.",
-  "methods_description": "Scalp EEG was recorded with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes on the international 10-20 system, sampled at 512 Hz, with 1-2 EKG channels in most recordings. Patients stayed in bed, asleep or awake, under video monitoring. Seizures were classified by an expert clinician according to ILAE criteria, and seizure onset and end times were annotated.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
-    },
-    {
-      "term": "Seizures",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
-    },
-    {
-      "term": "seizure prediction"
-    },
-    {
-      "term": "video-EEG monitoring"
-    },
-    {
-      "term": "scalp EEG"
-    }
-  ],
-  "source_hash": "9189e21a19f43cee642ab50887c52d3694c36feb54db0127003f6a1d8d602a46"
+  "source_hash": "5b5d134b3adeb3fc440c9ebba9fbc2073269dbe96c63314e1a7d775076c3c122"
 }
