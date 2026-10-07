@@ -1,5 +1,5 @@
 {
-  "Name": "Siena Scalp EEG Database",
+  "Name": "Siena Scalp EEG Database: video-EEG monitoring of 14 adults with epilepsy (47 annotated seizures)",
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC-BY-4.0",
