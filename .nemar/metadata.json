@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "Siena Scalp EEG Database",
-  "description": "Scalp video-EEG recordings from 14 adults with epilepsy, collected at the Unit of Neurology and Neurophysiology of the University of Siena, Italy. The dataset comprises about 128 hours of recording sampled at 512 Hz, with 47 annotated seizures, 10-20 electrode placement and ECG channels. It was collected for patient-specific seizure prediction research and is distributed here as a BIDS curation of the PhysioNet release, with SzCORE seizure-type annotations as derivatives.",
-  "methods_description": "Data were acquired with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes placed on the international 10-20 system, at a 512 Hz sampling rate. Patients stayed in bed, asleep or awake, during video-EEG monitoring. Seizures were classified according to ILAE criteria by an expert clinician. Original EDF files were kept byte-identical, and seizure annotations were converted to BIDS events.",
+  "title": "Siena Scalp EEG Database: video-EEG monitoring of 14 adults with epilepsy (47 annotated seizures)",
+  "description": "A BIDS curation of the Siena Scalp EEG Database, containing scalp video-EEG recordings from 14 adults with epilepsy (about 128 hours, 512 Hz, 10-20 electrode system, with EKG channels in most recordings). It includes 47 annotated seizures with clock-time onsets and ends, along with ILAE seizure type, localisation and lateralisation. The data were collected at the University of Siena during the PANACEE project on patient-specific seizure prediction. SzCORE seizure-detection annotations are provided as a derivative.",
+  "methods_description": "Video-EEG was recorded at the Unit of Neurology and Neurophysiology, University of Siena, with EB Neuro and Natus Quantum LTM amplifiers and reusable silver/gold cup electrodes at 512 Hz. Patients stayed in bed, asleep or awake. Seizures were classified by an expert clinician according to ILAE criteria. The original EDF files are kept byte-identical, with channels, events and participants tables derived from the release text files.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -110,5 +110,5 @@
     ".txt",
     ".yml"
   ],
-  "source_hash": "5b5d134b3adeb3fc440c9ebba9fbc2073269dbe96c63314e1a7d775076c3c122"
+  "source_hash": "3b0e6707a38aaca070afe58e1b81f2fe2de676b1474c36c2015060df52a35dbc"
 }
