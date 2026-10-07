@@ -19,7 +19,9 @@
     "https://doi.org/10.13026/5d4a-j060",
     "Detti P, Vatti G, Zabalo Manrique de Lara G (2020). EEG synchronization analysis for seizure prediction: a study on data of noninvasive recordings. Processes 8(7):846. doi:10.3390/pr8070846",
     "Detti P, Zabalo Manrique de Lara G, Bruni R, Pranzo M, Sarnari F, Vatti G (2018). A patient-specific approach for short-term epileptic seizures prediction through the analysis of EEG synchronization. IEEE Trans Biomed Eng. doi:10.1109/TBME.2018.2874716",
-    "Pollard T et al. (2026). PhysioNet as a global platform for biomedical research. Nature Health. doi:10.1038/s44360-026-00096-z"
+    "Pollard T et al. (2026). PhysioNet as a global platform for biomedical research. Nature Health. doi:10.1038/s44360-026-00096-z",
+    "Dan J, Detti P (2024). BIDS Siena Scalp EEG Database (v1.0.0). Zenodo. doi:10.5281/zenodo.10640762 (SzCORE annotations in derivatives/szcore)",
+    "Dan J et al. (2024). SzCORE: Seizure Community Open-Source Research Evaluation framework for the validation of electroencephalography-based automated seizure detection algorithms. Epilepsia 66(S3):14-24. doi:10.1111/epi.18113"
   ],
   "DatasetDOI": "doi:10.13026/5d4a-j060",
   "Keywords": [

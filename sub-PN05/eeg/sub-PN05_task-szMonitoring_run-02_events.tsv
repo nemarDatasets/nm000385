@@ -1,2 +1,2 @@
 onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
-6846.000	30.000	seizure	3	n/a	n/a	07.55.19	07.55.49	release registration start 06.01.23 differs from EDF header start 06.01.13
+6846.000	30.000	seizure	3	n/a	n/a	07.55.19	07.55.49	release registration start 06.01.23 differs from EDF header start 06.01.13; onset uses the EDF header start (as for every other file); the SzCORE BIDS Siena v1.0.0 (Dan & Detti 2024, doi:10.5281/zenodo.10640762) computes it from the release start and gives 6836 s (10 s earlier)

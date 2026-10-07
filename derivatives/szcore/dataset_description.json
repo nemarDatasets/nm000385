@@ -1,0 +1,36 @@
+{
+  "Name": "SzCORE seizure annotations for the Siena Scalp EEG Database (BIDS Siena Scalp EEG Database v1.0.0, Dan & Detti 2024)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Jonathan Dan",
+    "Paolo Detti"
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "epilepsy2bids (SzCORE)",
+      "Version": "BIDS Siena Scalp EEG Database v1.0.0 (Zenodo, 2024-02-09)",
+      "CodeURL": "https://github.com/esl-epfl/epilepsy2bids",
+      "Description": "events.tsv files copied byte-for-byte from the Zenodo release; only the file names were changed to this dataset's subject and run labels (see szcore_file_map.tsv). The 19-channel re-referenced, filtered, 256 Hz EDF files of that release are not included."
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5281/zenodo.10640762",
+      "URL": "https://zenodo.org/records/10640762",
+      "Version": "1.0.0"
+    },
+    {
+      "DOI": "doi:10.13026/5d4a-j060",
+      "URL": "https://physionet.org/content/siena-scalp-eeg/1.0.0/",
+      "Version": "1.0.0"
+    }
+  ],
+  "HowToAcknowledge": "Cite Dan J, Detti P (2024). BIDS Siena Scalp EEG Database (v1.0.0). Zenodo. doi:10.5281/zenodo.10640762; Dan J et al. (2024). SzCORE: Seizure Community Open-Source Research Evaluation framework for the validation of electroencephalography-based automated seizure detection algorithms. Epilepsia 66(S3):14-24. doi:10.1111/epi.18113; and the original data set, Detti P (2020), Siena Scalp EEG Database v1.0.0, PhysioNet, doi:10.13026/5d4a-j060.",
+  "ReferencesAndLinks": [
+    "https://zenodo.org/records/10640762",
+    "https://doi.org/10.1111/epi.18113",
+    "https://github.com/esl-epfl/epilepsy2bids"
+  ]
+}

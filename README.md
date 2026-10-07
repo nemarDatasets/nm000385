@@ -43,7 +43,7 @@ identification fields are blank. They are kept as released. Times of day are rea
 annotations are given as clock times.
 
 ## Release inconsistencies (kept visible, not silently corrected)
-- `PN00/PN00-3.edf` seizure 3: seizure end (19.29.29) lies after the end of the recording; duration set to n/a (release value not corrected).
+- `PN00/PN00-3.edf` seizure 3: seizure end (19.29.29) lies after the end of the recording (registration end 18.57.13); read as 18.29.29 (60 s), as in the SzCORE release (corrected 2026-10-07; the release string stays in `release_end_time`).
 - `PN01/PN01-1.edf` seizure 1: no file name in release text; subject has one file.
 - `PN01/PN01-1.edf` seizure 2: no file name in release text; subject has one file.
 - `PN05/PN05-3.edf` seizure 3: release registration start 06.01.23 differs from EDF header start 06.01.13.
@@ -54,14 +54,25 @@ annotations are given as clock times.
 - `PN10/PN10-3.edf` seizure 3: release gives clinical and electrical onset ("15.43.53 (CLINICAL ONSET); 15.43.59 (ELECTRIC ONSET)"); the first (clinical) is used.
 - `PN10/PN10-4.5.6.edf` seizure 6: release gives clinical and electrical onset ("15.18.26 (CLINICAL ONSET)"); the first (clinical) is used.
 - `PN11/PN11-1.edf` seizure 1: file name typo in release: 'PN11-.edf' -> PN11-1.edf (only file).
-- `PN14/PN14-3.edf` seizure 3: release registration start 16.17.45 differs from EDF header start 19.17.45.
+- `PN14/PN14-3.edf` seizure 3: release registration start 16.17.45 differs from EDF header start 19.17.45; the EDF header start is correct (19.17.45 + 41995 s = 06.57.40, the release registration end).
 - PN10: `subject_info.csv` gives 20 EEG channels, but `Seizures-list-PN10.txt` lists 19 EEG positions (Fp1, F3, C3, P3, O1, F7, T3, T5, Fz, Cz, Pz, Fp2, F4, C4, P4, O2, F8, T4, T6); those 19 are `status=good` and the other EEG channels in the PN10 EDFs are `status=bad` as the release instructs.
 - The channel numbers in the Seizures-list files do not match the EDF channel order in many files (45 listed channels across the release); channels were matched by name (see Contents).
+
+## SzCORE annotations (derivatives/szcore)
+`derivatives/szcore/` holds the seizure annotations of the BIDS Siena Scalp EEG Database v1.0.0 released for the SzCORE
+seizure-detection benchmark by Jonathan Dan and Paolo Detti (Zenodo, doi:10.5281/zenodo.10640762; Dan et al. 2024, Epilepsia,
+doi:10.1111/epi.18113), copied byte-for-byte and renamed to this dataset's subject and run labels. They add a standardised
+seizure type per event (`sz_foc_ia`, `sz_foc_a`, `sz_foc_f2b`, with HED tags). Of 47 seizures, 41 agree with the raw
+`events.tsv` within 0.5 s. The release-text ambiguities behind the other 6 are listed in `derivatives/szcore/README.md`. One is
+an error in the SzCORE release: PN14 run-03 is 3 h late there (17540 s instead of 6740 s). The PN00 run-03 duration in the raw events
+now follows SzCORE (60 s).
 
 ## Licence and citation
 Creative Commons Attribution 4.0 International (CC BY 4.0), as stated by PhysioNet for siena-scalp-eeg 1.0.0 (`LICENSE.txt` in
 sourcedata). Cite Detti (2020), PhysioNet, doi:10.13026/5d4a-j060; Detti, Vatti & Zabalo Manrique de Lara (2020), Processes 8(7):846,
-doi:10.3390/pr8070846; and PhysioNet (Pollard et al. 2026, Nature Health, doi:10.1038/s44360-026-00096-z).
+doi:10.3390/pr8070846; and PhysioNet (Pollard et al. 2026, Nature Health, doi:10.1038/s44360-026-00096-z). If you use
+`derivatives/szcore/`, also cite Dan & Detti (2024), Zenodo, doi:10.5281/zenodo.10640762 and Dan et al. (2024), Epilepsia
+66(S3):14-24, doi:10.1111/epi.18113.
 
 ## Funding (verbatim, paper)
 This work was partially supported by the grant “PANACEE” (Prevision and analysis of brain activity in transitions: epilepsy and sleep) of the Regione Toscana-PAR FAS 2007-20131.1.a.1.1.2-B22I14000770002.

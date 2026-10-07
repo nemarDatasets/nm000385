@@ -1,2 +1,2 @@
 onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
-7798.000	51.000	seizure	2	seizure B1	n/a	11.40.13	11.41.04 opure 11.40.43	release gives two end times ("11.41.04 opure 11.40.43"; Italian "oppure" = "or"); the first is used
+7798.000	51.000	seizure	2	seizure B1	n/a	11.40.13	11.41.04 opure 11.40.43	release gives two end times ("11.41.04 opure 11.40.43"; Italian "oppure" = "or"); the first is used; the SzCORE BIDS Siena v1.0.0 (Dan & Detti 2024, doi:10.5281/zenodo.10640762) uses the second value (11.40.43), i.e. duration 30 s

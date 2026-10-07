@@ -1,2 +1,2 @@
 onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
-765.000	n/a	seizure	3	n/a	n/a	18.28.29	19.29.29	seizure end (19.29.29) lies after the end of the recording; duration set to n/a (release value not corrected)
+765.000	60.000	seizure	3	n/a	n/a	18.28.29	19.29.29	release seizure end 19.29.29 lies after the end of the recording (release registration end 18.57.13); read as 18.29.29 (hour-digit typo), giving 60 s; the same 60 s duration is in the SzCORE BIDS Siena v1.0.0 (Dan & Detti 2024, doi:10.5281/zenodo.10640762). Correction made 2026-10-07; the release string is kept in release_end_time
