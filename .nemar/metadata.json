@@ -1,0 +1,104 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Paolo Detti": {
+      "orcid": "0000-0001-5717-5272"
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.13026/5d4a-j060",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000385",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000385",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.3390/pr8070846",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1109/TBME.2018.2874716",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1038/s44360-026-00096-z",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "This work was partially supported by the grant “PANACEE” (Prevision and analysis of brain activity in transitions: epilepsy and sleep) of the Regione Toscana-PAR FAS 2007-20131.1.a.1.1.2-B22I14000770002."
+    },
+    {
+      "funder_name": "Regione Toscana",
+      "award_number": "PAR FAS 2007-2013 1.1.a.1.1.2-B22I14000770002",
+      "award_title": "PANACEE (Prevision and analysis of brain activity in transitions: epilepsy and sleep)"
+    }
+  ],
+  "title": "Siena Scalp EEG Database",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "22.08 GB (45 files)"
+  ],
+  "formats": [
+    ".0/RECORDS",
+    ".csv",
+    ".edf",
+    ".json",
+    ".md",
+    ".tsv",
+    ".txt",
+    ".yml"
+  ],
+  "description": "A BIDS curation of the Siena Scalp EEG Database, comprising continuous scalp video-EEG recordings from 14 adults with epilepsy, acquired at the University of Siena, Italy. The dataset contains about 128 hours of recording at 512 Hz with 47 annotated seizures, 10-20 electrode placement, and ECG channels in most recordings. It was collected within the PANACEE project to support patient-specific seizure prediction and detection research.",
+  "methods_description": "Scalp EEG was recorded with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes on the international 10-20 system, sampled at 512 Hz, with 1-2 EKG channels in most recordings. Patients stayed in bed, asleep or awake, under video monitoring. Seizures were classified by an expert clinician according to ILAE criteria, and seizure onset and end times were annotated.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
+    },
+    {
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
+    },
+    {
+      "term": "Seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "seizure prediction"
+    },
+    {
+      "term": "video-EEG monitoring"
+    },
+    {
+      "term": "scalp EEG"
+    }
+  ],
+  "source_hash": "9189e21a19f43cee642ab50887c52d3694c36feb54db0127003f6a1d8d602a46"
+}
