@@ -43,7 +43,7 @@ identification fields are blank. They are kept as released. Times of day are rea
 annotations are given as clock times.
 
 ## Release inconsistencies (kept visible, not silently corrected)
-- `PN00/PN00-3.edf` seizure 3: seizure end (19.29.29) lies after the end of the recording (registration end 18.57.13); read as 18.29.29 (60 s), as in the SzCORE release (corrected 2026-10-07; the release string stays in `release_end_time`).
+- `PN00/PN00-3.edf` seizure 3: seizure end (19.29.29) lies after the end of the recording (registration end 18.57.13); duration set to n/a (release value not corrected). The SzCORE annotation in `derivatives/szcore` reads it as 18.29.29 (60 s).
 - `PN01/PN01-1.edf` seizure 1: no file name in release text; subject has one file.
 - `PN01/PN01-1.edf` seizure 2: no file name in release text; subject has one file.
 - `PN05/PN05-3.edf` seizure 3: release registration start 06.01.23 differs from EDF header start 06.01.13.
@@ -64,8 +64,8 @@ seizure-detection benchmark by Jonathan Dan and Paolo Detti (Zenodo, doi:10.5281
 doi:10.1111/epi.18113), copied byte-for-byte and renamed to this dataset's subject and run labels. They add a standardised
 seizure type per event (`sz_foc_ia`, `sz_foc_a`, `sz_foc_f2b`, with HED tags). Of 47 seizures, 41 agree with the raw
 `events.tsv` within 0.5 s. The release-text ambiguities behind the other 6 are listed in `derivatives/szcore/README.md`. One is
-an error in the SzCORE release: PN14 run-03 is 3 h late there (17540 s instead of 6740 s). The PN00 run-03 duration in the raw events
-now follows SzCORE (60 s).
+an error in the SzCORE release: PN14 run-03 is 3 h late there (17540 s instead of 6740 s). For PN00 run-03 the raw duration stays n/a (the release end time
+is after the end of the recording); SzCORE gives 60 s.
 
 ## Licence and citation
 Creative Commons Attribution 4.0 International (CC BY 4.0), as stated by PhysioNet for siena-scalp-eeg 1.0.0 (`LICENSE.txt` in

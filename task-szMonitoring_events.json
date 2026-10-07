@@ -4,7 +4,7 @@
     "Units": "s"
   },
   "duration": {
-    "Description": "Seizure end minus start from the release; n/a where the release value is inconsistent (see note).",
+    "Description": "Seizure end minus start from the release; n/a where the release value is inconsistent (see note). Raw annotations follow the release text only; the SzCORE re-annotation in derivatives/szcore gives its own reading where this column is n/a (PN00 run-03: 60 s).",
     "Units": "s"
   },
   "trial_type": {

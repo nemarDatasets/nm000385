@@ -21,7 +21,7 @@ standardised SzCORE/HED event type (ILAE 2017 based: `sz_foc_ia` focal impaired 
 Same 14 subjects, 41 recordings and 47 seizures (47 in the raw `events.tsv`). Onset and duration agree within 0.5 s for 41 of 47
 seizures. The 6 differences:
 - PN00 run-03: the release's seizure end 19.29.29 is after the end of the recording. SzCORE reads it as 18.29.29 (60 s); the raw
-  events now use the same value (2026-10-07), with the release string kept in `release_end_time`.
+  events keep duration n/a (release value not corrected) and point here.
 - PN05 run-02: SzCORE takes the onset from the release's registration start (06.01.23), this data set from the EDF header start
   (06.01.13): 6836 s vs 6846 s. Neither can be ruled out. In the other release files, the registration end lies 0 s or 20 s
   before the end of the EDF. Here it lies 10 s before it when counted from the EDF header start, and 20 s before it when counted
