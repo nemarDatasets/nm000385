@@ -1,0 +1,4 @@
+filename	source_file	start_time_of_day	edf_header_date
+eeg/sub-PN12_task-szMonitoring_run-01_eeg.edf	PN12/PN12-1.2.edf	15:51:31	01.01.17
+eeg/sub-PN12_task-szMonitoring_run-02_eeg.edf	PN12/PN12-3.edf	08:42:35	01.01.17
+eeg/sub-PN12_task-szMonitoring_run-03_eeg.edf	PN12/PN12-4.edf	15:59:19	01.01.17

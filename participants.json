@@ -1,0 +1,49 @@
+{
+  "participant_id": {
+    "Description": "Release patient folder (PNxx), kept as the BIDS label."
+  },
+  "age": {
+    "Description": "Age at recording (subject_info.csv age_years).",
+    "Units": "year"
+  },
+  "sex": {
+    "Description": "subject_info.csv gender.",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
+  },
+  "seizure_type": {
+    "Description": "Seizure classification (ILAE criteria), subject_info.csv column \"seizure\".",
+    "Levels": {
+      "IAS": "focal onset impaired awareness",
+      "WIAS": "focal onset without impaired awareness",
+      "FBTC": "focal to bilateral tonic-clonic"
+    }
+  },
+  "localization": {
+    "Description": "subject_info.csv localization.",
+    "Levels": {
+      "T": "temporal",
+      "F": "frontal"
+    }
+  },
+  "lateralization": {
+    "Description": "subject_info.csv lateralization.",
+    "Levels": {
+      "R": "right",
+      "L": "left",
+      "Bilateral": "bilateral"
+    }
+  },
+  "n_eeg_channels": {
+    "Description": "subject_info.csv eeg_channel: number of EEG channels."
+  },
+  "n_seizures": {
+    "Description": "subject_info.csv number_seizures."
+  },
+  "recording_minutes": {
+    "Description": "subject_info.csv rec_time_minutes: total recording time.",
+    "Units": "min"
+  }
+}

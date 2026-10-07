@@ -1,0 +1,4 @@
+filename	source_file	start_time_of_day	edf_header_date
+eeg/sub-PN09_task-szMonitoring_run-01_eeg.edf	PN09/PN09-1.edf	14:08:54	01.01.17
+eeg/sub-PN09_task-szMonitoring_run-02_eeg.edf	PN09/PN09-2.edf	15:02:09	01.01.17
+eeg/sub-PN09_task-szMonitoring_run-03_eeg.edf	PN09/PN09-3.edf	14:20:23	01.01.17

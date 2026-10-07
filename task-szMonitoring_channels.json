@@ -1,0 +1,11 @@
+{
+  "release_label": {
+    "Description": "Name under which Seizures-list-PNxx.txt lists this channel (matched by name, not by the list's channel numbers, which are shifted in several files); \"EKG 1\"/\"EKG 2\" are the EDF channels labelled 1/2; n/a = not listed (ignore, per the release)."
+  },
+  "transducer": {
+    "Description": "EDF header transducer field."
+  },
+  "edf_prefiltering": {
+    "Description": "EDF header prefiltering field."
+  }
+}

@@ -1,0 +1,2 @@
+onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
+6740.000	41.000	seizure	3	n/a	n/a	21.10.05	21.10.46	release registration start 16.17.45 differs from EDF header start 19.17.45

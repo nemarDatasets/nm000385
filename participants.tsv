@@ -1,0 +1,15 @@
+participant_id	age	sex	seizure_type	localization	lateralization	n_eeg_channels	n_seizures	recording_minutes
+sub-PN00	55	M	IAS	T	R	29	5	198
+sub-PN01	46	M	IAS	T	L	29	2	809
+sub-PN03	54	M	IAS	T	R	29	2	752
+sub-PN05	51	F	IAS	T	L	29	3	359
+sub-PN06	36	M	IAS	T	L	29	5	722
+sub-PN07	20	F	IAS	T	L	29	1	523
+sub-PN09	27	F	IAS	T	L	29	3	410
+sub-PN10	25	M	FBTC	F	Bilateral	20	10	1002
+sub-PN11	58	F	IAS	T	R	29	1	145
+sub-PN12	71	M	IAS	T	L	29	4	246
+sub-PN13	34	F	IAS	T	L	29	3	519
+sub-PN14	49	M	WIAS	T	L	29	4	1408
+sub-PN16	41	F	IAS	T	L	29	2	303
+sub-PN17	42	M	IAS	T	R	29	2	308

@@ -1,0 +1,49 @@
+{
+  "Name": "Siena Scalp EEG Database",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "raw",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Paolo Detti"
+  ],
+  "Acknowledgements": "Data: Detti P. (2020), Siena Scalp EEG Database v1.0.0, PhysioNet. From Detti et al. 2020 (Acknowledgments, verbatim): \"We thank Marianna Curcio of the Department of Medicine, Surgery and Neuroscience and Francesco Nicolelli of the Department of Information Engineering and Mathematics of the University of Siena for their support in data recording and storage.\" BIDS curation for NEMAR: Bruno Aristimunha.",
+  "HowToAcknowledge": "Cite the data set: Detti, P. (2020). Siena Scalp EEG Database (version 1.0.0). PhysioNet. RRID:SCR_007345. https://doi.org/10.13026/5d4a-j060 ; the paper: Detti, P., Vatti, G., & Zabalo Manrique de Lara, G. (2020). EEG synchronization analysis for seizure prediction: a study on data of noninvasive recordings. Processes, 8(7), 846. https://doi.org/10.3390/pr8070846 ; and the standard PhysioNet citation (Pollard et al. 2026, PhysioNet as a global platform for biomedical research, Nature Health, doi:10.1038/s44360-026-00096-z).",
+  "Funding": [
+    "This work was partially supported by the grant “PANACEE” (Prevision and analysis of brain activity in transitions: epilepsy and sleep) of the Regione Toscana-PAR FAS 2007-20131.1.a.1.1.2-B22I14000770002."
+  ],
+  "EthicsApprovals": [
+    "The Ethical Committee of the University of Siena approved the data in accordance with the Declaration of Helsinki. At the time of admission at the clinics, each patient signed a written informed consent in which agrees to the video registration and to the use of the data for a possible scientific divulgation."
+  ],
+  "ReferencesAndLinks": [
+    "https://physionet.org/content/siena-scalp-eeg/1.0.0/",
+    "https://doi.org/10.13026/5d4a-j060",
+    "Detti P, Vatti G, Zabalo Manrique de Lara G (2020). EEG synchronization analysis for seizure prediction: a study on data of noninvasive recordings. Processes 8(7):846. doi:10.3390/pr8070846",
+    "Detti P, Zabalo Manrique de Lara G, Bruni R, Pranzo M, Sarnari F, Vatti G (2018). A patient-specific approach for short-term epileptic seizures prediction through the analysis of EEG synchronization. IEEE Trans Biomed Eng. doi:10.1109/TBME.2018.2874716",
+    "Pollard T et al. (2026). PhysioNet as a global platform for biomedical research. Nature Health. doi:10.1038/s44360-026-00096-z"
+  ],
+  "DatasetDOI": "doi:10.13026/5d4a-j060",
+  "Keywords": [
+    "EEG",
+    "scalp EEG",
+    "epilepsy",
+    "seizure",
+    "seizure prediction",
+    "seizure detection",
+    "video-EEG monitoring",
+    "ECG"
+  ],
+  "SourceDatasets": [
+    {
+      "URL": "https://physionet.org/content/siena-scalp-eeg/1.0.0/",
+      "DOI": "doi:10.13026/5d4a-j060",
+      "Version": "1.0.0"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "siena_convert.py (ieeg-nemar campaign)",
+      "Description": "EDF files copied byte-for-byte from PhysioNet siena-scalp-eeg 1.0.0 (SHA256 verified); channels.tsv, events.tsv and participants.tsv written from the release text files; full release kept in sourcedata/.",
+      "CodeURL": "n/a"
+    }
+  ]
+}

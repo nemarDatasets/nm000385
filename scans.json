@@ -1,0 +1,14 @@
+{
+  "filename": {
+    "Description": "Recording file."
+  },
+  "source_file": {
+    "Description": "Original EDF in the PhysioNet release (PNxx/<file>)."
+  },
+  "start_time_of_day": {
+    "Description": "Start clock time from the EDF header (hh:mm:ss, local time)."
+  },
+  "edf_header_date": {
+    "Description": "Start date in the EDF header as released. The release de-identified all dates (every file reads 01.01.yy), so it is not the real recording date."
+  }
+}

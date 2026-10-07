@@ -1,0 +1,46 @@
+name	type	units	sampling_frequency	status	status_description	release_label	transducer	edf_prefiltering
+EEG Fp1	EEG	uV	512	good	n/a	Fp1	AC Transducer of 17	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F3	EEG	uV	512	good	n/a	F3	AC Transducer of 18	HP:1.591549Hz LP:15Hz N:50Hz
+EEG C3	EEG	uV	512	good	n/a	C3	AC Transducer of 19	HP:1.591549Hz LP:15Hz N:50Hz
+EEG P3	EEG	uV	512	good	n/a	P3	AC Transducer of 20	HP:1.591549Hz LP:15Hz N:50Hz
+EEG O1	EEG	uV	512	good	n/a	O1 (written "1")	AC Transducer of 21	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F7	EEG	uV	512	good	n/a	F7	AC Transducer of 22	HP:1.591549Hz LP:15Hz N:50Hz
+EEG T3	EEG	uV	512	good	n/a	T3	AC Transducer of 23	HP:1.591549Hz LP:15Hz N:50Hz
+EEG T5	EEG	uV	512	good	n/a	T5	AC Transducer of 24	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Fc1	EEG	uV	512	good	n/a	Fc1	AC Transducer of 25	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Fc5	EEG	uV	512	good	n/a	Fc5	AC Transducer of 26	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Cp1	EEG	uV	512	good	n/a	Cp1	AC Transducer of 27	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Cp5	EEG	uV	512	good	n/a	Cp5	AC Transducer of 28	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F9	EEG	uV	512	good	n/a	F9	AC Transducer of 29	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Fz	EEG	uV	512	good	n/a	Fz	AC Transducer of 30	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Cz	EEG	uV	512	good	n/a	Cz	AC Transducer of 31	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Pz	EEG	uV	512	good	n/a	Pz	AC Transducer of 32	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F4	EEG	uV	512	good	n/a	F4	AC Transducer of 34	HP:1.591549Hz LP:15Hz N:50Hz
+EEG C4	EEG	uV	512	good	n/a	C4	AC Transducer of 35	HP:1.591549Hz LP:15Hz N:50Hz
+EEG P4	EEG	uV	512	good	n/a	P4	AC Transducer of 36	HP:1.591549Hz LP:15Hz N:50Hz
+EEG O2	EEG	uV	512	good	n/a	O2	AC Transducer of 37	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F8	EEG	uV	512	good	n/a	F8	AC Transducer of 38	HP:1.591549Hz LP:15Hz N:50Hz
+EEG T4	EEG	uV	512	good	n/a	T4	AC Transducer of 39	HP:1.591549Hz LP:15Hz N:50Hz
+EEG T6	EEG	uV	512	good	n/a	T6	AC Transducer of 40	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Fc2	EEG	uV	512	good	n/a	Fc2	AC Transducer of 41	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Fc6	EEG	uV	512	good	n/a	Fc6	AC Transducer of 42	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Cp2	EEG	uV	512	good	n/a	Cp2	AC Transducer of 43	HP:1.591549Hz LP:15Hz N:50Hz
+EEG Cp6	EEG	uV	512	good	n/a	Cp6	AC Transducer of 44	HP:1.591549Hz LP:15Hz N:50Hz
+EEG F10	EEG	uV	512	good	n/a	F10	AC Transducer of 45	HP:1.591549Hz LP:15Hz N:50Hz
+EKG EKG	ECG	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of A	HP:15.91549Hz LP:15Hz N:50Hz
+SPO2	MISC	%	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of SpO2	HP:-1Hz LP:-1Hz N:-1Hz
+HR	MISC	bpm	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of HR	HP:-1Hz LP:-1Hz N:-1Hz
+1	ECG	uV	512	good	n/a	EKG 1	AC Transducer of 1	HP:-1Hz LP:-1Hz N:-1Hz
+2	ECG	uV	512	good	n/a	EKG 2	AC Transducer of 2	HP:-1Hz LP:-1Hz N:-1Hz
+EEG FP2	EEG	uV	512	good	n/a	Fp2	AC Transducer of 4	HP:1.591549Hz LP:15Hz N:50Hz
+EEG P9	EEG	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 46	HP:1.591549Hz LP:15Hz N:50Hz
+EEG P10	EEG	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 47	HP:1.591549Hz LP:15Hz N:50Hz
+B	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of B	HP:-1Hz LP:-1Hz N:-1Hz
+C	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of C	HP:-1Hz LP:-1Hz N:-1Hz
+D	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of D	HP:-1Hz LP:-1Hz N:-1Hz
+PLET	MISC	au	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	DC Transducer of PLET	HP:-1Hz LP:-1Hz N:-1Hz
+61	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 61	HP:-1Hz LP:-1Hz N:-1Hz
+62	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 62	HP:-1Hz LP:-1Hz N:-1Hz
+63	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 63	HP:-1Hz LP:-1Hz N:-1Hz
+64	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of 64	HP:-1Hz LP:-1Hz N:-1Hz
+MK	MISC	uV	512	bad	Not listed in Seizures-list-PN09.txt; the release says all other channels in the edf files must be ignored	n/a	AC Transducer of MK	HP:-1Hz LP:-1Hz N:-1Hz

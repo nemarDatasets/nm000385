@@ -1,0 +1,2 @@
+onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
+8860.000	69.000	seizure	2	n/a	n/a	23.39.09	23.40.18	file name typo in release: 'PNO6-2.edf' -> PN06-2.edf

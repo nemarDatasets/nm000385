@@ -1,0 +1,4 @@
+onset	duration	trial_type	seizure_number	seizure_label	electrodes_at_onset	release_start_time	release_end_time	note
+2309.000	5.000	seizure	4	seizure B3	n/a	12.49.50	12.49.55	n/a
+6544.000	19.000	seizure	5	B4	n/a	14.00.25	14.00.44	n/a
+11225.000	57.000	seizure	6	seizure B5	n/a	15.18.26 (CLINICAL ONSET)	15.19.23	release gives clinical and electrical onset ("15.18.26 (CLINICAL ONSET)"); the first (clinical) is used

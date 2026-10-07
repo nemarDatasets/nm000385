@@ -1,0 +1,34 @@
+{
+  "onset": {
+    "Description": "Seizure start: release clock time minus EDF header start clock time (modulo 24 h).",
+    "Units": "s"
+  },
+  "duration": {
+    "Description": "Seizure end minus start from the release; n/a where the release value is inconsistent (see note).",
+    "Units": "s"
+  },
+  "trial_type": {
+    "Description": "Event type.",
+    "Levels": {
+      "seizure": "Epileptic seizure annotated by the clinicians"
+    }
+  },
+  "seizure_number": {
+    "Description": "Seizure index n in Seizures-list-PNxx.txt."
+  },
+  "seizure_label": {
+    "Description": "Free-text qualifier after \"Seizure n\" in the release (e.g. \"in sleep\", \"seizure B1\")."
+  },
+  "electrodes_at_onset": {
+    "Description": "Electrodes involved at seizure start, where the release states them."
+  },
+  "release_start_time": {
+    "Description": "Seizure start time exactly as written in the release (hh.mm.ss)."
+  },
+  "release_end_time": {
+    "Description": "Seizure end time exactly as written in the release (hh.mm.ss)."
+  },
+  "note": {
+    "Description": "Curation notes: release typos and how they were handled. Nothing was silently corrected."
+  }
+}

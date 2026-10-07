@@ -1,0 +1,67 @@
+# Siena Scalp EEG Database (PhysioNet siena-scalp-eeg 1.0.0), EEG-BIDS
+
+Scalp video-EEG of 14 adults with epilepsy (9 male, 5 female; aged 20–71), recorded at the Unit of Neurology and Neurophysiology of
+the University of Siena, Italy, with 47 annotated seizures in about 128 hours of recording. Sampling rate 512 Hz; electrodes on the
+international 10-20 system (most patients also have 10-10 positions); most recordings include 1 or 2 EKG channels. This is a BIDS
+curation of the PhysioNet release (Detti 2020, doi:10.13026/5d4a-j060), described in Detti, Vatti & Zabalo Manrique de Lara 2020,
+Processes 8(7):846.
+
+## Source description (PhysioNet, verbatim excerpts)
+- "The database consists of EEG recordings of 14 patients acquired at the Unit of Neurology and Neurophysiology of the University of
+  Siena. Subjects include 9 males (ages 25-71) and 5 females (ages 20-58)." (The paper gives 36–71 for the males; subject_info.csv,
+  used for `participants.tsv`, has male ages 25–71.)
+- "The data were acquired employing EB Neuro and Natus Quantum LTM amplifiers, and reusable silver/gold cup electrodes. Patients were
+  asked to stay in the bed as much as possible, either asleep or awake."
+- "The diagnosis of epilepsy and the classification of seizures according to the criteria of the International League Against
+  Epilepsy were performed by an expert clinician after a careful review of the clinical and electrophysiological data of each patient."
+- "The data has been collected ... during a regional research project, called PANACEE, aiming at the development of noninvasive
+  patient-specific monitoring/control low-cost devices for the prediction of epileptic seizures."
+
+## Ethics (verbatim, PhysioNet page and paper)
+The Ethical Committee of the University of Siena approved the data in accordance with the Declaration of Helsinki. At the time of admission at the clinics, each patient signed a written informed consent in which agrees to the video registration and to the use of the data for a possible scientific divulgation.
+
+## Contents
+- `sub-PNxx/eeg/sub-PNxx_task-szMonitoring_run-NN_eeg.edf`: the 41 original EDF files, **byte-identical** to the release
+  (no re-reference, filter, resampling or re-write). `sub-PNxx_scans.tsv` maps every run to its original file name (e.g. `PN10-4.5.6.edf`).
+- `*_channels.tsv`: channel names exactly as in the EDF. The release's `Seizures-list-PNxx.txt` lists the channels that carry the EEG
+  and EKG signals and says "all other channels in the edf files must be ignored". Its channel numbers do not match the EDF channel
+  order in several files (e.g. PN01, PN03), so channels were matched **by name**: EDF `EEG X` = listed `X` (the listed "1" is a
+  truncated "O1"), and the listed "EKG 1"/"EKG 2" = the EDF channels labelled `1`/`2`. Listed channels are `status=good`; all other
+  channels (e.g. `EKG EKG`, `SPO2`, `HR`, `PLET`, `MK`, unlabelled numbers/letters, and EEG positions the list leaves out) are
+  `status=bad` with that reason. `release_label` gives the listed name. Types: EEG, ECG, MISC. Units from the EDF header.
+- `*_events.tsv`: one row per seizure (`trial_type=seizure`), 47 in total. `onset` = seizure clock time in the release minus the
+  EDF header start time (modulo 24 h); `release_start_time` / `release_end_time` keep the release strings verbatim.
+- `participants.tsv`: age, sex, ILAE seizure type (IAS focal onset impaired awareness; WIAS focal onset without impaired awareness;
+  FBTC focal to bilateral tonic-clonic), localisation, lateralisation, channel and seizure counts and recording minutes, from
+  `subject_info.csv`.
+- `sourcedata/physionet-siena-scalp-eeg-1.0.0/`: the complete original release (EDF files, Seizures-list text files,
+  `subject_info.csv`, `RECORDS`, `LICENSE.txt`, `SHA256SUMS.txt`), verified against PhysioNet's SHA256SUMS.
+
+## Dates and privacy
+The release states that "all dates in the .edf files are de-identified": every EDF header reads 01.01.yy, and the patient and recording
+identification fields are blank. They are kept as released. Times of day are real clock times and are kept because the seizure
+annotations are given as clock times.
+
+## Release inconsistencies (kept visible, not silently corrected)
+- `PN00/PN00-3.edf` seizure 3: seizure end (19.29.29) lies after the end of the recording; duration set to n/a (release value not corrected).
+- `PN01/PN01-1.edf` seizure 1: no file name in release text; subject has one file.
+- `PN01/PN01-1.edf` seizure 2: no file name in release text; subject has one file.
+- `PN05/PN05-3.edf` seizure 3: release registration start 06.01.23 differs from EDF header start 06.01.13.
+- `PN06/PN06-1.edf` seizure 1: file name typo in release: 'PNO6-1.edf' -> PN06-1.edf.
+- `PN06/PN06-2.edf` seizure 2: file name typo in release: 'PNO6-2.edf' -> PN06-2.edf.
+- `PN06/PN06-4.edf` seizure 4: file name typo in release: 'PNO6-4.edf' -> PN06-4.edf.
+- `PN10/PN10-2.edf` seizure 2: release gives two end times ("11.41.04 opure 11.40.43"; Italian "oppure" = "or"); the first is used.
+- `PN10/PN10-3.edf` seizure 3: release gives clinical and electrical onset ("15.43.53 (CLINICAL ONSET); 15.43.59 (ELECTRIC ONSET)"); the first (clinical) is used.
+- `PN10/PN10-4.5.6.edf` seizure 6: release gives clinical and electrical onset ("15.18.26 (CLINICAL ONSET)"); the first (clinical) is used.
+- `PN11/PN11-1.edf` seizure 1: file name typo in release: 'PN11-.edf' -> PN11-1.edf (only file).
+- `PN14/PN14-3.edf` seizure 3: release registration start 16.17.45 differs from EDF header start 19.17.45.
+- PN10: `subject_info.csv` gives 20 EEG channels, but `Seizures-list-PN10.txt` lists 19 EEG positions (Fp1, F3, C3, P3, O1, F7, T3, T5, Fz, Cz, Pz, Fp2, F4, C4, P4, O2, F8, T4, T6); those 19 are `status=good` and the other EEG channels in the PN10 EDFs are `status=bad` as the release instructs.
+- The channel numbers in the Seizures-list files do not match the EDF channel order in many files (45 listed channels across the release); channels were matched by name (see Contents).
+
+## Licence and citation
+Creative Commons Attribution 4.0 International (CC BY 4.0), as stated by PhysioNet for siena-scalp-eeg 1.0.0 (`LICENSE.txt` in
+sourcedata). Cite Detti (2020), PhysioNet, doi:10.13026/5d4a-j060; Detti, Vatti & Zabalo Manrique de Lara (2020), Processes 8(7):846,
+doi:10.3390/pr8070846; and PhysioNet (Pollard et al. 2026, Nature Health, doi:10.1038/s44360-026-00096-z).
+
+## Funding (verbatim, paper)
+This work was partially supported by the grant “PANACEE” (Prevision and analysis of brain activity in transitions: epilepsy and sleep) of the Regione Toscana-PAR FAS 2007-20131.1.a.1.1.2-B22I14000770002.
