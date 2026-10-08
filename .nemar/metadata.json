@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Siena Scalp EEG Database: video-EEG monitoring of 14 adults with epilepsy (47 annotated seizures)",
-  "description": "Scalp video-EEG recordings from 14 adults with epilepsy, acquired at the Unit of Neurology and Neurophysiology of the University of Siena, Italy. The dataset comprises about 128 hours of recording at 512 Hz using the 10-20 system, with ECG channels in most recordings and 47 expert-annotated seizures. It was collected within the PANACEE project to support patient-specific seizure prediction and detection research. This is a BIDS curation of the PhysioNet release.",
-  "methods_description": "Data were acquired with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes placed on the international 10-20 system, sampled at 512 Hz. Patients stayed in bed, asleep or awake, during video-EEG monitoring. Epilepsy diagnosis and seizure classification followed ILAE criteria and were made by an expert clinician after reviewing clinical and electrophysiological data. Seizure onset and end times were annotated as clock times.",
+  "description": "Scalp video-EEG recordings from 14 adults with epilepsy, acquired at the Unit of Neurology and Neurophysiology of the University of Siena, Italy. The dataset comprises about 128 hours of recording at 512 Hz using the 10-20 system, with ECG channels and 47 annotated seizures. It is a BIDS curation of the PhysioNet Siena Scalp EEG Database, collected for developing patient-specific seizure prediction and monitoring devices.",
+  "methods_description": "Data were acquired with EB Neuro and Natus Quantum LTM amplifiers using reusable silver/gold cup electrodes placed on the international 10-20 system (most patients also with 10-10 positions), sampled at 512 Hz. Patients stayed in bed, asleep or awake, during video-EEG monitoring. Seizures were diagnosed and classified by an expert clinician according to ILAE criteria. Original EDF files were preserved byte-for-byte, with channels, events and participants files derived from the release text files.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -26,15 +26,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
     },
     {
-      "term": "Electroencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
       "term": "seizure prediction"
     },
     {
+      "term": "seizure detection"
+    },
+    {
       "term": "video-EEG monitoring"
+    },
+    {
+      "term": "scalp EEG"
     }
   ],
   "related_identifiers": [
@@ -107,5 +108,5 @@
     ".txt",
     ".yml"
   ],
-  "source_hash": "22f5b531fa18de6797107372eabab92014179ffce8129fc1f6bd22e413c5bd8c"
+  "source_hash": "e3f14b9de6a0e659235e7f0f130b5971355b74cc9cc0a97041fca97337c25a16"
 }
