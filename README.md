@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000385-blue)](https://doi.org/10.82901/nemar.nm000385)
+
 # Siena Scalp EEG Database (PhysioNet siena-scalp-eeg 1.0.0), EEG-BIDS
 
 Scalp video-EEG of 14 adults with epilepsy (9 male, 5 female; aged 20–71), recorded at the Unit of Neurology and Neurophysiology of
